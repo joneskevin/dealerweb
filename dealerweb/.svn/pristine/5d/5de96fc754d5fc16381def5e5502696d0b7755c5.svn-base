@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+<!--   最好不要再配置applicationContext.xml文件了，否则在action中注解@Transactional时，事务会不起作用，-->
+<!--   原因是后执行配有数据源和事务的 applicationContext.xml文件-->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:proxool.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!--dataSource proxool-->
+	<bean id="dataSource4main" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+		<property name="alias" value="dataSource4main" />
+		<property name="driver" value="${jdbc.driver}" />
+		<property name="driverUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="prototypeCount" value="${proxool.prototypeCount}" />
+		<property name="maximumConnectionCount" value="${proxool.maximumConnectionCount}" />
+		<property name="minimumConnectionCount" value="${proxool.minimumConnectionCount}" />
+		<property name="maximumActiveTime" value="${proxool.maximumActiveTime}" />
+		<property name="simultaneousBuildThrottle" value="${proxool.simultaneousBuildThrottle}" />
+		<property name="trace" value="true" />
+	</bean>
+	
+	<!-- jdbc template -->
+	<bean id="jdbcTemplate4main" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource">
+            <ref local="dataSource4main" />
+        </property>
+    </bean>
+    <bean id="jdbcDao4mysql" class="com.ava.base.dao.jdbc.JdbcDao4mysql" autowire="byName">
+		<property name="jdbcTemplate" ref="jdbcTemplate4main" />
+	</bean>	
+
+	<!-- Hibernate SessionFactory -->  
+	<!--  如果使用Hibernate3的非注解方式则使用此：
+	class="org.springframework.orm.hibernate3.LocalSessionFactoryBean" 
+	-->  
+	<bean id="sessionFactory4main"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource4main" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">com.ava.base.dao.hibernate.TDMySQLDialect</prop>
+				<prop key="hibernate.query.substitutions">true 'Y', false 'N'</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+		<!--<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath*:/com/ava/domain/hbm</value>
+			</list>
+		</property>-->
+		<property name="packagesToScan">
+			<list>
+		       	<value>com.ava.domain.entity</value>
+		       	<value>com.ava.admin.domain.entity</value>
+		       	<value>com.ava.gateway.domain.entity</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory4main" />
+	</bean>
+	
+	<!-- Generic Dao - can be used when doing standard CRUD -->
+    <bean id="hibernateDao" class="com.ava.base.dao.hibernate.HibernateDao">
+        <property name="sessionFactory" ref="sessionFactory4main"/>
+    </bean>	
+    
+	<context:component-scan base-package="com.ava.back.service.impl"></context:component-scan>
+	<context:component-scan base-package="com.ava.api.service.impl"></context:component-scan>
+	
+	<context:component-scan base-package="com.ava.dao.impl" />
+	<context:component-scan base-package="com.ava.gateway.dao.impl" />
+	<context:component-scan base-package="com.ava.facade.impl" />
+	
+	<context:component-scan base-package="com.ava.baseCommon.service.impl" />
+	<context:component-scan base-package="com.ava.baseHelp.service.impl" />
+	<context:component-scan base-package="com.ava.baseSystem.service.impl" />
+	<context:component-scan base-package="com.ava.dealer.service.impl" />
+	<context:component-scan base-package="com.ava.gateway.business.impl" />
+	<context:component-scan base-package="com.ava.gateway.facade.impl" />
+	<context:component-scan base-package="com.ava.admin.service.impl" />
+	<context:component-scan base-package="com.ava.admin.dao.impl" />
+	
+	
+	<!-- 配置事务  -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory4main" />
+		</property>
+	</bean>
+	<!-- 配置事务 jdbc -->
+	<!--
+		<bean id="jdbcTransactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource"><ref local="dataSource4main"/></property>
+		</bean>
+	-->
+	<!-- 启用注解 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+
+	<bean id="springContext" class="com.ava.resource.SpringContext"></bean>
+	
+	<!-- 历史库配置 -->
+	<!-- 数据源 -->
+	<bean id="historyDataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+		<property name="alias" value="historyDataSource" />
+		<property name="driver" value="${jdbc.driver}" />
+		<property name="driverUrl" value="${history.jdbc.url}" />
+		<property name="user" value="${history.jdbc.username}" />
+		<property name="password" value="${history.jdbc.password}" />
+		<property name="prototypeCount" value="${history.proxool.prototypeCount}" />
+		<property name="maximumConnectionCount" value="${history.proxool.maximumConnectionCount}" />
+		<property name="minimumConnectionCount" value="${history.proxool.minimumConnectionCount}" />
+		<property name="maximumActiveTime" value="${proxool.maximumActiveTime}" />
+		<property name="simultaneousBuildThrottle" value="${proxool.simultaneousBuildThrottle}" />
+		<property name="trace" value="true" />
+	</bean>
+
+	<!-- Hibernate SessionFactory -->  
+	<bean id="historySessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="historyDataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">com.ava.base.dao.hibernate.TDMySQLDialect</prop>
+				<prop key="hibernate.query.substitutions">true 'Y', false 'N'</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+		<!--<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath*:/com/ava/domain/hbm</value>
+			</list>
+		</property>-->
+		<property name="packagesToScan">
+			<list>
+		       	<value>com.ava.domain.entity</value>
+		       	<value>com.ava.gateway.domain.entity</value>
+			</list>
+		</property>
+	</bean>	
+	
+	<!-- Generic Dao - can be used when doing standard CRUD -->
+    <bean id="historyHibernateDao" class="com.ava.base.dao.hibernate.HibernateDao">
+        <property name="sessionFactory" ref="historySessionFactory"/>
+    </bean>	
+    
+</beans>

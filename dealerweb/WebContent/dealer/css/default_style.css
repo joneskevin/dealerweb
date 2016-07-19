@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* tree style start*/
+.dtree_nodeRow{width:175px;height:30px;margin:0px;padding-left:5px;}
+.dtree_nodeRow:hover{width:175px;height:30px;background-color: #e2e8f1;font-weight: bold;}
+.dtree_nodeRow a:link{line-height:35px;padding-left:10px;}
+.dtree_nodeRow a:hover{text-decoration: none;}
+/* tree style end*/
+
+.inputOperationBar{text-align:center;}
+.inputOperationBar input{text-align:center;}
+
+#picCripContainer{
+	border: 1px solid #ccc;
+    width: 600px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+    text-align: center;
+}
+
+#picCripContainer img{
+	max-width: 600px;
+}
+
+#uploadAvatarOperationDiv{
+	margin-top:15px;
+}

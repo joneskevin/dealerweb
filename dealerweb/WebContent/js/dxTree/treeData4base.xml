@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tree id='0'>
+<!--注意1：item必须是规范的三层结构，否则复选框情况下，选中会出问题-->
+<!--注意2：所有权限和部分权限最好不要同时出现-->
+	
+	<item text='车辆信息' id='Menu1L1' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='车辆列表' id='Menu2L11' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='1100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='历史车辆' id='Menu2L14' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='1400' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='车辆返利' id='Menu2L15' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='1500' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='车辆维护' id='Menu2L16' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='1600' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='车辆OBD监控' id='Menu2L17' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='1700' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='实时监控' id='Menu2L12' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='1200' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='轨迹回放' id='Menu2L13' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='1300' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+	
+	<item text='车辆更新' id='Menu1L5' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='新装申请' id='Menu2L51' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='查看 ' id='5100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+			<item text='新增车辆申请 ' id='5101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+			<item text='编辑' id='5102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+<!-- 			<item text='取消申请' id='5103' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		 -->
+		</item>
+<!-- 		<item text='新装审批' id='Menu2L52' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='查看' id='5200' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+			<item text='审核' id='5201' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+		</item>
+		<item text='拆除申请' id='Menu2L53' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='查看' id='5300' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='拆除申请' id='5301' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='取消申请' id='5302' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='拆除完成' id='5303' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='拆除审批' id='Menu2L54' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='查看' id='5400' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='审核' id='5401' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item> -->
+		<item text='换装' id='Menu2L55' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='查看' id='5500' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='换装' id='5501' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='车辆拆除' id='Menu2L56' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='5600' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='换装拆除计划' id='Menu2L57' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='5700' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+	
+	<item text='报备管理' id='Menu1L4' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='市场活动' id='Menu2L41' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有 ' id='4100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+		</item>
+		<item text='事故维修' id='Menu2L42' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='4200' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+		</item>
+		<item text='报备审批' id='Menu2L43' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='4300' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='历史报备' id='Menu2L44' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='4400' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+	
+	<item text='试驾明细' id='Menu1L6' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='有效试驾' id='Menu2L61' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有 ' id='6100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+		</item>
+		<item text='单周统计' id='Menu2L62' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='6200' im0='book.gif' im1='books_open.gif' im2='book.gif'/>		
+		</item>
+		<item text='月度统计' id='Menu2L63' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='6300' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='季度统计' id='Menu2L64' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='6400' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='时间段统计' id='Menu2L65' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='6500' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='无效试驾' id='Menu2L66' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='6600' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+	
+	<item text='违规明细' id='Menu1L2' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='时间违规' id='Menu2L21' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='2100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='路线违规' id='Menu2L22' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='2200' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='非活跃试驾' id='Menu2L23' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='2300' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+	
+	<item text='报表管理' id='Menu1L9' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='配置报表' id='Menu2L91' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='9100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+<!-- 		<item text='违规报表' id='Menu2L92' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'> -->
+<!-- 			<item text='所有' id='9200' im0='book.gif' im1='books_open.gif' im2='book.gif'/> -->
+<!-- 		</item> -->
+<!-- 		<item text='试驾率报表' id='Menu2L93' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'> -->
+<!-- 			<item text='所有' id='9300' im0='book.gif' im1='books_open.gif' im2='book.gif'/> -->
+<!-- 		</item> -->
+	</item>	
+	
+	<item text='图表管理' id='Menu1L3' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='车辆配置统计（分车型）' id='Menu2L31' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='3100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='车辆配置统计（分区）' id='Menu2L32' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='3200' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+<!-- 		<item text='试驾车使用' id='Menu2L33' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'> -->
+<!-- 			<item text='所有' id='3300' im0='book.gif' im1='books_open.gif' im2='book.gif'/> -->
+<!-- 		</item> -->
+<!-- 		<item text='试驾率环比' id='Menu2L34' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'> -->
+<!-- 			<item text='所有' id='3400' im0='book.gif' im1='books_open.gif' im2='book.gif'/> -->
+<!-- 		</item> -->
+<!-- 		<item text='单周试驾率环比' id='Menu2L35' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'> -->
+<!-- 			<item text='所有' id='3500' im0='book.gif' im1='books_open.gif' im2='book.gif'/> -->
+<!-- 		</item> -->
+	</item>
+	
+	<item text='设备管理' id='Menu1L8' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='设备维护' id='Menu2L81' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='8100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>	
+	
+	<item text='系统设置' id='Menu1L7' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='线路管理' id='Menu2L75' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='查看' id='7500' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='添加' id='7501' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='编辑' id='7502' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='删除' id='7503' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='设置参考线路' id='7504' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='设置围栏' id='7505' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='设置检测点' id='7506' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='公告列表' id='Menu2L77' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='7700' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='车型配置调研' id='Menu2L79' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='7900' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='问卷结果列表' id='Menu2L791' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='79100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='用户密码修改' id='Menu2L78' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='7800' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>	
+	
+	<item text='运营管理' id='Menu1L10' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='用户管理' id='Menu2L101' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='角色管理' id='Menu2L102' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10200' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='经销商管理' id='Menu2L103' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10300' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='公告管理' id='Menu2L104' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10400' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='试驾查询' id='Menu2L105' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10500' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='GPS报文查询' id='Menu2L106' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10600' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='重跑任务查询' id='Menu2L107' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10700' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='异常日志查询' id='Menu2L108' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='所有' id='10800' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>	
+	
+</tree>

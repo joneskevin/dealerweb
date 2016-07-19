@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tree id='0'>
+
+	<item text='信息共享' id='Menu1L1' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='发站内消息时发短信' id='1101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+	</item>
+	
+	<item text='工作辅助' id='Menu1L2' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='待办事宜发短信' id='2101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+<!--		<item text='日常任务提醒' id='2102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>-->
+	</item>	
+	
+	<item text='行政人事' id='Menu1L3' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='请假申请时发短信' id='3101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		<item text='报销申请时发短信' id='3102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		<item text='领用申请时发短信' id='3103' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		<item text='通用申请时发短信' id='3109' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+	</item>
+	
+</tree>

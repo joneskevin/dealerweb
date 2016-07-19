@@ -1,0 +1,21 @@
+﻿{            
+	"sSearch": "搜索：",
+	"sLengthMenu": "每页显示 <select><option value='10'>10</option><option value='20'>20</option><option value='30'>30</option><option value='40'>40</option><option value='50'>50</option><option value='-1'>所有</option></select> 条",
+	"sZeroRecords": "抱歉-没有数据可显示",
+	"sInfo": "_START_ - _END_，共 _TOTAL_ 条",
+	"sInfoEmpty": "0-0，共 0条",
+	"oPaginate": {
+		"sFirst": "首页",
+		"sPrevious": "<",
+		"sNext": ">",
+		"sLast": "末页"
+	},
+	"oAria": {
+		"sSortAscending": "降序",
+		"sSortDescending": "升序"
+	},
+	"sProcessing": "正在等待服务器处理",
+	"sLoadingRecords": "请等待 - loading...",
+	"sInfoFiltered": "",
+	"sInfoPostFix": ""
+}

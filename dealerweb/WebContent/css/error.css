@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0px;
+	padding:0px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+margin:0pt;padding:0pt; font-family:宋体;}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color: #e0dfe4;
+}
+a {
+	color: #ff7200;
+	text-decoration: underline;
+}
+a:hover {
+	color: #0368C2;
+}
+.main {
+	width: 691px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+.main .top {
+	background-image: url(../images/error/top.gif);
+	background-repeat: no-repeat;
+	height: 10px;
+	width: 691px;
+	overflow: hidden;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.main .content {
+	height: 230px;
+	width: 629px;
+	overflow: hidden;
+	position: relative;
+	margin: 0px;
+	float: left;
+	background-color: #FFFFFF;
+	background-image: url(../images/error/bg.gif);
+	background-repeat: repeat-x;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #919191;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #919191;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+}
+.main .content .logo {
+	float: left;
+	width: 85px;
+	overflow: hidden;
+	position: relative;
+	height: 200px;
+}
+.main .content .title {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	width: 544px;
+	height: 20px;
+	line-height: 100%;
+}
+.main .content .title span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+.main .content .theme {
+	font-size: 14px;
+	float: left;
+	width: 544px;
+	padding-top: 15px;
+	overflow: hidden;
+	position: relative;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #b4c5d1;
+	border-bottom-color: #b4c5d1;
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 100%;
+}
+.main .content .theme span {
+	color: #ff7200;
+}
+.main .content .tips {
+	float: left;
+	width: 529px;
+	overflow: hidden;
+	position: relative;
+	line-height: 22px;
+	background-image: url(../images/error/icon.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 10px;
+	padding-left: 15px;
+	margin: 0px;
+	height: 22px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+*+html .main .content .tips {
+	background-position: 5px 7px;
+}
+.main .content .tips span {
+	color: #ff7200;
+}
+.main .content .btn {
+	float: left;
+	width: 544px;
+	padding-left: 85px;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	padding-top: 5px;
+}
+.main .content .btn input {
+	width: 80px;
+	padding-top: 1px;
+}
+
+.main .footer {
+	background-image: url(../images/error/footer.gif);
+	background-repeat: no-repeat;
+	height: 8px;
+	width: 691px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}

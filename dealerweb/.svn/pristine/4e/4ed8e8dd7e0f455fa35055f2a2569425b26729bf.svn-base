@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job-scheduling-data xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_1_8.xsd"
+    version="1.8">
+    
+    <schedule>
+    	<!-- 站内消息或短信提醒 -->
+		<!-- 	
+		<job>
+	        <name>MessageAlertJob</name>
+	        <group>DEFAULT</group>
+	        <description>This is the description of MessageAlertJob</description>
+	        <job-class>com.ava.quartz.alert.MessageAlertJob</job-class>
+	    </job>
+	    <trigger>
+	        <cron>
+	            <name>MessageAlertJob</name>
+	            <group>DEFAULT</group>
+	            <job-name>MessageAlertJob</job-name>
+	            <job-group>DEFAULT</job-group>
+	            
+	             每隔2分钟执行任务 
+                <cron-expression>0 0/2 * ? * *</cron-expression>
+	        </cron>
+	    </trigger> 
+	    -->
+	    
+    	<!-- 实际硬盘使用空间统计任务 -->
+	    <job>
+	        <name>RoutineJob</name>
+	        <group>DEFAULT</group>
+	        <description>This is the description of Job</description>
+	        <job-class>com.ava.quartz.routine.RoutineJob</job-class>
+	    </job>
+	    <trigger>
+	        <cron>
+	            <name>RoutineJob</name>
+	            <group>DEFAULT</group>
+	            <job-name>RoutineJob</job-name>
+	            <job-group>DEFAULT</job-group>
+	            
+	            <!-- 每天凌晨2点15分执行任务 -->
+                <cron-expression>0 15 2 ? * *</cron-expression>
+	        </cron>
+	    </trigger>
+	    
+	    
+	    <!-- 试驾重跑分析任务 -->
+	    <job>
+	        <name>TestDriveJob</name>
+	        <group>DEFAULT</group>
+	        <description>This is the TestDrive of Job</description>
+	        <job-class>com.ava.admin.job.TestDriveJob</job-class>
+	    </job>
+	    <trigger>
+	        <cron>
+	            <name>TestDriveJob</name>
+	            <group>DEFAULT</group>
+	            <job-name>TestDriveJob</job-name>
+	            <job-group>DEFAULT</job-group>
+	            
+	            <!-- 每天凌晨2点15分执行任务 -->
+                <cron-expression>0 30 00 ? * *</cron-expression>
+	        </cron>
+	    </trigger>
+    </schedule>    
+</job-scheduling-data>

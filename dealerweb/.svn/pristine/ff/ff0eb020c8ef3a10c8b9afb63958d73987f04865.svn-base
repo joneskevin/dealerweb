@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tree id='0'>
+<!--注意1：item必须是规范的三层结构，否则复选框情况下，选中会出问题-->
+	<item text='系统管理' id='Menu1' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='操作员管理' id='Menu1List1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<!--<item text='超级管理员' id='1100' im0='book.gif' im1='books_open.gif' im2='book.gif'/>-->
+			<item text='操作员列表' id='1101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='新增操作员' id='1102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='删除操作员' id='1103' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='修改密码' id='1104' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='分配权限' id='1105' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='数据字典' id='Menu1List2' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='设置字典' id='1201' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='种类品牌关系' id='1202' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='地区维护' id='1203' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='统计报表' id='Menu1List3' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='销售类报表' id='1301' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+
+	<item text='内容管理' id='Menu2' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='动态信息' id='Menu2List1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='带附件资讯' id='2101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='删除资讯' id='2102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+
+	<item text='客户关系' id='Menu3' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='客户管理' id='Menu3List1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='客户列表' id='3101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='删除客户' id='3102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='好友管理' id='Menu3List2' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='邀请好友' id='3201' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='删除好友' id='3202' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>
+
+	<item text='仓储物流' id='Menu4' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='库存管理' id='Menu4List1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='入库' id='4101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='出库' id='4102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='配送管理' id='Menu4List2' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='配送公司维护' id='4201' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='订单配送处理' id='4202' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>	
+
+	<item text='商品管理' id='Menu5' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='产品管理' id='Menu5List1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='产品维护' id='5101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+			<item text='产品评论' id='5102' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='采购管理' id='Menu5List2' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='采购' id='5201' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='套餐管理' id='Menu5List3' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='套餐维护' id='5301' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='积分管理' id='Menu5List4' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='积分维护' id='5401' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>	
+
+	<item text='客户服务' id='Menu6' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='售前管理' id='Menu6List1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='客户咨询' id='6101' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+		<item text='售中管理' id='Menu6List2' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='订购单处理' id='6201' im0='book.gif' im1='books_open.gif' im2='book.gif'/>
+		</item>
+	</item>	
+	
+</tree>

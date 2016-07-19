@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+ul,li{ list-style-type:none; margin:0; padding:0;}
+a{ color:#494949;}
+
+.top{ width:926px; margin:0 auto; overflow:hidden;}
+.top h1{ float: left; height: 95px; width: 200px; margin-top: 15px;}
+.top h2{  float:left; height: 45px; width: 110px; margin-top: 38px; margin-left:10px;}
+
+.helpTop ul{ border:1px solid #a3abba; height:33px; float:right; margin-top:60px; background:url(../images/help/ul_bg.gif) repeat-x 0 0;}
+.helpTop li{ float:left; border-right:1px solid #e0e0e0;}
+.helpTop li a{ text-decoration:none; padding:10px 20px; display:block; color:#000;}
+.helpTop li a:hover{ border:1px solid #fff; padding:7px 19px; margin-top:3px; background:url(../images/help/li_bg.gif) repeat-x 0 0; color:#fff;}
+.helpTop a.topM_current{border:1px solid #fff; padding:7px 19px; margin-top:3px; background:url(../images/help/li_bg.gif) repeat-x 0 0; color:#fff; color:#fff;}
+
+.main{ width:926px; margin:25px auto; overflow:hidden; clear:both; }
+.content_l{ width:690px; float:left;}
+.content_r{ width:222px; float:right;}
+
+.download{ width:690px; height:200px; background:url(../images/help/obcDownloadBg.jpg) no-repeat 0 0; position:relative;}
+.download ul{ position:absolute; left:300px; top:105px; list-style-type:square; color:#fff;}
+.download li{ list-style:inside; list-style-type:square; line-height:180%;}
+.download a.downloadOBC{ display:block; width:160px; height:50px; text-indent:-999px; position:absolute; left:518px; top:130px; overflow:hidden;}
+
+.problem,.beginner{ width:688px; border:1px solid #a3aaba; margin-top:10px; height:auto!important; height:200px; min-height:200px;}
+.problem h3,.beginner h3{ background:url(../images/help/h3_bg.gif) repeat-x 0 0; padding:7px 0; text-indent:15px; font:14px normal; color:#00205b;}
+
+.problem{ position:relative;}
+.problem .search{ position:absolute; right:2px; top:2px;}
+.search{
+	height:21px;
+	border:1px solid #bdc7d8;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	width: 168px;
+	background-color: #FFFFFF;
+}
+.search input {
+}
+.search .s_text{ border:0px; width:146px; color:#a2a2a2; font-size:12px; padding:0 1px; height:22px; line-height:22px;}
+.search .s_btn{
+	position: absolute; margin-top:1px;
+}
+
+.problem ol{ margin:3px 0 10px 15px;}
+.problem li{ list-style:inside; list-style-type:decimal; line-height:200%;}
+.problem li a{}
+.problem li a:hover{ color:#3b5888;}
+
+.beginner ol{ margin:5px 0;}
+.beginner li{ width:228px; float:left; text-indent:15px; line-height:200%;}
+
+.contact,.news{ border:1px solid #a3aaba; margin-bottom:10px;}
+.news{ width:220px; height:auto!important; height:200px; min-height:200px;}
+.contact h3,.news h3{ padding:5px 0; text-indent:8px; width:200px; margin:0 auto; border-bottom:1px solid #3b5888; font:14px normal; color:#00205b;}
+
+.contact div{ background:url(../images/help/contact_bg.gif) repeat-x 2px 3px; width:214px; margin:0 auto; height:auto!important; height:196px; min-height:196px;}
+.contact ul{ margin-left:15px; margin-top:8px;}
+.contact li{ background:url(../images/help/contact_icon.gif) no-repeat 0 5px; padding-left:20px; line-height:200%;}
+
+.news ol{ margin-left:10px; margin:8px 0 8px 10px;}
+.news li{ list-style:inside; list-style-type:decimal; line-height:200%;}
+
+/* problem */
+.left_menu{ width:220px; float:left; border:1px solid #a3aaba;}
+
+.content{ width:690px; float:right; border:1px solid #a3aaba; position:relative; padding-bottom:10px;}
+.p_b{height:auto!important; height:450px; min-height:450px;}
+
+.left_menu{ padding-bottom:20px;}
+.left_menu ul{ width:210px; margin:5px 0 0 5px;}
+.left_menu li{  background:#fff url(../images/help/icon_arrow.gif) no-repeat 3px 8px; }
+.left_menu li a{ width:195px;display:block;  padding:8px 0;padding-left:15px; text-decoration:none; color:#00205b;}
+.left_menu li a:hover{ background:#d6f2fe url(../images/help/icon_arrow.gif) no-repeat 3px 8px;}
+.left_menu .leftM_current{ background:#d6f2fe url(../images/help/icon_arrow.gif) no-repeat 3px 8px;}
+
+.content h3{ background:url(../images/help/h3_bg.gif) repeat-x 0 0; padding:7px 0; text-indent:15px; font:14px normal; color:#00205b; margin-bottom:20px;}
+.content h3 a{ font:14px normal; color:#00205b;}
+.content .search{ position:absolute; right:3px; top:3px;}
+
+.problem_detail{ width:660px; margin:10px auto;}
+.problem_detail dt{ border-top:1px solid #949494; background:#eee url(../images/help/icon_ask.gif) no-repeat 10px 8px; height:28px; line-height:28px; text-indent:30px; color:#353535;}
+.problem_detail dd{background:#fff url(../images/help/icon_answer.gif) no-repeat 10px 8px; padding:5px 0 5px 30px; color:#4e4e4e;}
+
+.pageBox{ width:660px; text-align:right; margin:20px 0;}
+
+.page { padding:0px;  text-align:center}
+.page a { color:#0097d8; border:1px solid #ccc; margin:2px; text-decoration:none; padding:2px 5px;}
+.page a:hover { border:1px solid #999; color:#666; text-decoration:none;}
+.page a:active { border:1px solid #999; color:#666;}
+.page .current { font-weight:bold; padding:2px 5px; border:1px solid #ccc; color:#ccc; margin:2px; }
+.page .disabled { border:1px solid #ccc; padding:2px 5px; margin:2px; color:#ddd;}
+.page_box{ width:750px; height:30px; line-height:30px; background:#f7f7f7; margin:70px auto 20px auto; padding:0 9px;}
+.page_box a{ color:#0b4573;}
+.page_box p{ float:left;}
+.page_box div{ float:right;}
+
+
+#nav { 
+    width:180px; 
+	margin-left:5px;
+	margin-top:5px;
+    line-height: 26px;  
+    list-style-type: none; 
+    text-align:left; 
+    /*定义整个ul菜单的行高和背景色*/ 
+} 
+
+/*==================一级目录===================*/ 
+#nav a { 
+    width: 195px;  
+    display: block;
+	padding:7px 0; 
+    padding-left:15px; 
+    /*Width(一定要)，否则下面的Li会变形*/ 
+} 
+
+#nav li { 
+    background:#fff url(../images/help/icon_arrow.gif) no-repeat 3px 8px; /*一级目录的背景色*/ 
+    border-bottom:#FFF 1px solid; /*下面的一条白边*/ 
+    float:left; 
+    /*float：left,本不应该设置，但由于在Firefox不能正常显示 
+    继承Nav的width,限制宽度，li自动向下延伸*/ 
+} 
+
+#nav li a:hover{ 
+    background:#d6f2fe;    /*一级目录onMouseOver显示的背景色*/ 
+} 
+
+#nav a:link  { 
+    color:#666; text-decoration:none; 
+} 
+#nav a:visited  { 
+    color:#666;text-decoration:none; 
+} 
+#nav a:hover  { 
+    color:#FFF;text-decoration:none;font-weight:bold; 
+} 
+#nav .leftM_current{ background:#d6f2fe url(../images/help/icon_arrow_down.gif) no-repeat 3px 8px; }
+
+/*==================二级目录===================*/ 
+#nav li ul { 
+    list-style:none; 
+    text-align:left; 
+} 
+#nav li ul li{     
+    background: #fff; /*二级目录的背景色*/ 
+} 
+
+#nav li ul a{ 
+         padding-left:30px; 
+         width:180px; 
+    /* padding-left二级目录中文字向右移动，但Width必须重新设置=(总宽度-padding-left)*/ 
+} 
+
+/*下面是二级目录的链接样式*/ 
+
+#nav li ul a:link  { 
+    color:#666; text-decoration:none; 
+} 
+#nav li ul a:visited  { 
+    color:#666;text-decoration:none; 
+} 
+#nav li ul a:hover { 
+    color:#F00; 
+    text-decoration:none; 
+    font-weight:normal; 
+	background:#fff; 
+    /* 二级onmouseover的字体颜色、背景色*/ 
+} 
+
+/*==============================*/ 
+#nav li:hover ul { 
+    left: auto; 
+} 
+#nav li.sfhover ul { 
+    left: auto; 
+} 
+#content { 
+    clear: left;  
+} 
+#nav ul.collapsed { 
+    display: none; 
+} 
+ 
+#nav li ul a.leftSubM_current { text-decoration:underline; color:#f00; }
+
+#PARENT{ 
+    width:110px; 
+    padding-left:0px; 
+} 
+.STYLE1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+.solveCase{ text-align:center;}
+.solveCase p{ line-height:40px;}

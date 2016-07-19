@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+.date_85{ width:85px;}
+.time_150{ width:150px;}
+.people_70{ width:70px;}
+.contact_120{ width:120px;}
+
+.distributionSaleCenterName_80{ width:80px;}   /**分销中心*/
+.dealerCode_70{ width:70px;}                  /**网络代码*/
+.cnName_240{ width:240px;}                    /**经销商名称*/
+.parentCode_100{ width:100px;}                /**一级网点代码*/
+.parentCodeName_240{ width:240px;}            /**一级网点名称*/
+.isKeyCity_Nick_80{ width:80px;}              /**经销商状态*/
+.dealerType_Nick_70{ width:70px;}            /**网络形态*/
+.regionProvinceId_Nick_50{ width:50px;}      /**省份*/
+.regionCityId_Nick_50{ width:50px;}          /**城市*/
+.plateNumber_75{ width:75px;}                /**车牌*/
+.carStyleId_Nick_200{ width:200px;}          /**车型*/
+.long_carStyleId_Nick_240{ width:240px;}     /**车型*/
+.vin_140{ width:140px;}                      /**VIN*/
+.simMobile_95{ width:95px;}                  /**通讯号*/
+.uniqueId_120{ width:120px;}                /**设备号*/
+.configureStatus_Nick_80{ width:80px;}      /**状态*/
+.isDemolition_Nick_50{ width:50px;}         /**可拆除*/
+.isNetWorkDealerNick_100{ width:100px;}         /**新入网经销商*/
+.lineId_Nick_70{ width:70px;}               /**线路名称*/
+.loopCount_50{ width:50px;}                 /**次数*/
+.mileage_70{ width:70px;}                   /**里程*/
+.loopTotal_50{ width:50px;}                 /**总次数*/
+.mileageTotal_80{ width:80px;}              /**总里程*/
+.companyName_240{ width:240px;}             /**公司名称*/
+.simId_120{ width:120px;}                   /**SIM卡ID*/
+.currentVersion_70{ width:70px;}            /**版本号*/
+.typeId_nick_70{ width:70px;}               /**类型*/
+.countId_70{ width:70px;}                   /**数量*/
+.destination_70{ width:70px;}               /**目的地*/
+.userNick_70{ width:70px;}                  /**用户昵称*/
+.status_nick_70{ width:70px;}               /**状态*/
+.long_status_nick_100{ width:100px;}        /**状态*/
+.type_nick_70{ width:70px;}                 /**类型*/
+.configureNum_70{ width:70px;}              /**配置数量*/
+.testDriveNum_70{ width:70px;}              /**试驾次数*/
+.hopefulCustomer_80{ width:80px;}           /**有望客户数*/
+.drivePercent_70{ width:70px;}              /**试驾率*/
+.nickName_100{ width:100px;}                /**分销中心*/
+.roles_70{ width:70px;}                     /**角色*/
+.all_vehicle_style_240{ width:240px;}        /**全车型*/
+.isRebateNick_80{ width:80px;} /**是否*/
+.single_test_drive_percent_79{ width:79px;}        /**表头平均*/
+.single_test_drive_percent_80{ width:80px;}        /**表头平均*/
+.isDisableNick_50{ width:50px;}             /**是否可编辑*/
+.season_50{ width:50px;}             		/**季度*/
+.tiny_operator_100{ width:100px;}             /**操作*/
+.short_operator_150{ width:150px;}             /**操作*/
+.middle_operator_220{ width:220px;}             /**操作*/
+.long_operator_280{ width:280px;}             /**操作*/
+
+/**配置围栏*/
+/**配置围栏*/
+.driveLine_companyName{ width:300px;}             /**所属单位*/
+.driveLine_lineName{ width:200px;}             /**围栏名称*/
+.driveLine_lineTypeNick{ width:150px;}             /**类型*/
+.driveLine_fenceTypeNick{ width:150px;}             /**围栏类型*/
+.driveLine_lineMileageLabel{ width:150px;}             /**里程*/

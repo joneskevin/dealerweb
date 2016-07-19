@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #eef6f9;
+	background-image: url(../../images/topBg.gif);
+	background-repeat: repeat-x;
+}
+.top {
+	min-width: 1003px;
+	height: 61px;
+	overflow: hidden;
+}
+.top .logo {
+	float: left;
+	overflow: hidden;
+	height: 61px;
+	width: 460px;
+}
+.top .toggleMenu{
+	float: left;
+	width: 60px;
+	margin-top:15px;
+	margin-left:-450px;
+}
+.top .nav {
+	float: right;
+	line-height: 30px;
+	height: 30px;
+	width: 540px;
+	text-align: right;
+	padding-right: 10px;
+	color: #FFFFFF;
+}
+.top .nav a:link, .top .nav a:active, .top .nav a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.top .nav a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.top .down {
+	float: right;
+	width: 540px;
+	padding-right: 10px;
+	line-height: 25px;
+	text-align: right;
+	clear: right;
+}
+.top .down a:link, .top .down a:active, .top .down a:visited, .top .down a:hover {
+	color: #50789b;
+	text-decoration: underline;
+}
+.top .down span {
+	border: 1px solid #8aabc9;
+	background-color: #FFFFFF;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+	margin-left: 10px;
+}

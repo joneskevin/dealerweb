@@ -1,0 +1,27 @@
+package com.ava.system;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ava.base.TestBase;
+import com.ava.baseSystem.service.IUserRegisterLoginService;
+import com.ava.util.HttpUtil;
+
+public class TestUser extends TestBase {
+	@Autowired
+	public IUserRegisterLoginService service;
+	
+	@Test
+	public void testLogin() {
+		String targetUrl = "http://127.0.0.1:9090/base/registerLogin/login.vti?r=" + Math.random();
+		Map parameters = new HashMap();
+		parameters.put("loginName", "admin@group");
+		parameters.put("pseudoPassword", "000000");
+		for (int i = 0; i < 100000; i++) {
+			HttpUtil.doPost(targetUrl, parameters);
+		}
+	}
+}

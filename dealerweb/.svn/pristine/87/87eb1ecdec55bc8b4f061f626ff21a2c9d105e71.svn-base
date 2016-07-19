@@ -1,0 +1,62 @@
+发布步骤：
+1、修改proxool文件；注意数据库IP地址
+2、修改globalConfig文件；修改服务器地址(DOMAIN)
+3、修改footer中的版本号；
+4、同步数据库；
+5、header.jsp setInterval(checkNewShortMessage, 3600000);修改短消息获取间隔
+6、修改globalConfig文件 shortMessageIntevel = 10 修改短消息获取间隔
+
+dealerweb 0.0.0发布了
+1,修改了上一版本的几个bug
+
+数据库变动日志:
+
+2014.8.20 
+修改location表原始经纬度、百度经纬度坐标长度   衡国红
+修改TestDrive表增加一个判断是否试驾进行中标识CURRENT_STATUS(判定是否处于试驾状态(0试驾中  1试驾结束))    衡国红
+
+2014.8.21
+修改t_violation表增加一个判断是否试驾进行中标识CURRENT_STATUS(判定是否处于试驾状态(0试驾中  1试驾结束))    衡国红
+修改t_drive_line(SEMICYCLE_POINT)  增加半圈点经纬度
+
+alter table t_violation add column CURRENT_STATUS int(11);
+alter table t_test_drive add column CURRENT_STATUS int(11);
+alter table t_drive_line add column SEMICYCLE_POINT varchar(100);
+
+select * from t_company tc where tc.org_id=820;      
+select * from t_drive_line tdl where tdl.company_id=820;
+
+update t_company  set baidu_lat='31.183023', bai_lng='121.417174' where org_id=820;  之前有误
+update t_drive_line  set SEMICYCLE_POINT='31.186768,121.420759' where id=89;
+update t_drive_line  set SEMICYCLE_POINT='31.186787,121.419049' where id=90;
+
+#查看点火熄火原始消息信息(0点火   1熄火)
+select id,vin ,fire_state,message_code,message_date,create_time,lng,lat,baidu_lng,baidu_lat 
+from t_message_current_gps tmcg where tmcg.message_code='1281' and tmcg.fire_state in (0,1) order by create_time desc;
+#查看经纬度信息
+select tl.* from t_location tl order by tl.SAVE_DATE desc;
+#查看试驾信息
+select * from t_test_drive ttd order by ttd.SAVE_DATE desc;
+
+
+select * from t_location  tl where tl.VEHICLE_ID=90;
+
+select * from t_test_drive ttd where ttd.VEHICLE_ID=90;
+
+select * from t_vehicle tv where tv.ID=90;
+select tc.ORG_ID,tc.CN_NAME,tc.BAIDU_LNG,tc.BAIDU_LAT from t_company tc where tc.ORG_ID=820;
+
+select tmcg.VIN,tmcg.MESSAGE_DATE,tmcg.FIRE_STATE,tmcg.BAIDU_LNG,tmcg.BAIDU_LAT from t_message_current_gps tmcg 
+where tmcg.MESSAGE_CODE=1281
+  and tmcg.VIN='LSVNC41Z8E2035721' order by tmcg.MESSAGE_DATE desc;
+
+update t_company set BAIDU_LNG='121.417174',BAIDU_LAT='31.183023' where ORG_ID=820;
+
+2014年8月27日
+车型表t_car_style中添加 
+车型代码 MODE_CODE、PARENT_ID、LEVE
+
+2014年9月3日
+线路添加字段
+@Column(name = "FILL_COLOR")
+@Column(name = "STROKE_COLOR")

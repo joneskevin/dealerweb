@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tree id='0'>
+<!--注意1：item必须是规范的三层结构，否则复选框情况下，选中会出问题-->
+<!--注意2：所有权限和部分权限最好不要同时出现-->
+	
+	<item text='行政人事' id='Menu1L4' open='1' im0='books_close.gif' im1='tombs.gif' im2='tombs.gif' call='1' select='1'>
+		<item text='我的审批' id='Menu2L43' open='1' im0='book.gif' im1='books_open.gif' im2='books_close.gif'>
+			<item text='审批申请单 ' id='4301' im0='book.gif' im1='books_open.gif' im2='book.gif'/>	
+			<item text='查看所有申请单 ' id='4302' im0='book.gif' im1='books_open.gif' im2='book.gif'/>	
+			<item text='打印申请单' id='4303' im0='book.gif' im1='books_open.gif' im2='book.gif'/>	
+			<item text='申请单附件上传 ' id='4104' im0='book.gif' im1='books_open.gif' im2='book.gif'/>	
+			<item text='分配申请单 ' id='4305' im0='book.gif' im1='books_open.gif' im2='book.gif'/>	
+		</item>
+	</item>
+	
+</tree>

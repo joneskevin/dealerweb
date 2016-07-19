@@ -1,0 +1,11 @@
+Navigation控件的使用
+
+功能:  
+     Navigation控件提供翻页功能.
+
+使用方法:
+
+注意事项:
+  1.navigationFront.jsp和navigationFrontSimple.jsp的区别，老版和新本版的区别。
+  2.navigationFrontSimple.jsp和navigationFrontSimple2.jsp的区别，2在翻页提交时会调用onsubmit方法。
+     

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding:0px;
+}
+
+.footer {
+	background-color: #84adcc;
+	line-height: 29px;
+	text-align: center;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #ffffff;
+	margin:0px;
+	position:absolute;
+	left:0;
+	bottom:0; 
+	width:100%;
+}

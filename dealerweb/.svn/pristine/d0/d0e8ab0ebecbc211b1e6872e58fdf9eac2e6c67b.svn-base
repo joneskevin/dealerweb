@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * page css
+ * author: tvrrdfn 
+ * email: tvrrdfn@126.com
+
+ * more: http://www.weizemiao.com
+ * -------------------------------------------------
+*/
+
+/* =50 车辆配置统计（分车型）
+ -------------------------------------------------*/
+.nav_gather_main {
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.nav_gather_main ul {
+    position: absolute;
+    left: 0;
+    }
+.nav_gather_main ul li {
+    width: 140px;
+    /*width: 15%;*/
+    /*min-width: 190px;*/
+    height: 25px;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 25px;
+    border-right: 2px solid #fff;
+    }
+.nav_gather_main ul li a {
+    font-size: 12px;
+    font-family:"微软雅黑";
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    }
+.nav_gather_main ul li a:hover,
+.nav_gather_main ul li a.active {
+    background: #008ed0;
+    text-decoration:none;
+    }
+.nav_gather_main p {
+    height: 25px;
+    padding: 1px 0 0 20px;
+    margin-left: 2px;
+    /*border-left: 4px solid #76c55a;*/
+    }
+.nav_gather_main p span {
+    width: 20px;
+    height: 20px;
+    float: left;
+    cursor: pointer;
+    margin-right: 20px;
+    background: url(../images/btn_play.gif) no-repeat 0 0;
+    }
+.nav_gather_main p span#btn_prev {background-position: 0 0;}
+.nav_gather_main p span#btn_back {background-position: -20px 0; margin-right: 28px;}
+.nav_gather_main p span#btn_ahead {background-position: -40px 0;}
+.nav_gather_main p span#btn_next {background-position: -60px 0;}

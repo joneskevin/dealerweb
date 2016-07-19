@@ -1,0 +1,51 @@
+#######------JDBC---------------------############################
+
+#MySQL
+jdbc.driver=com.mysql.jdbc.Driver
+#MySQL---hibernate
+#jdbc.hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect
+
+#MySQL for main
+#------dev db------
+#jdbc.url=jdbc:mysql://10.11.24.11:3306/dealer_web_dev?useUnicode=true&characterEncoding=UTF8&useOldAliasMetadataBehavior=true&jdbcCompliantTruncation=false
+#jdbc.username=root
+#jdbc.password=888888
+
+#test address
+#jdbc.url=jdbc:mysql://localhost:3306/dealer_web_dev?useUnicode=true&characterEncoding=UTF8&useOldAliasMetadataBehavior=true&jdbcCompliantTruncation=false
+#jdbc.username=root
+#jdbc.password=888888
+
+#remote server address
+jdbc.url=jdbc:mysql://localhost:3306/dealer_web_dev?useUnicode=true&characterEncoding=UTF8&useOldAliasMetadataBehavior=true&jdbcCompliantTruncation=false
+jdbc.username=root
+jdbc.password=test123
+
+#history server address
+history.jdbc.url=jdbc:mysql://10.2.100.21:3306/dealer_web_dev?useUnicode=true&characterEncoding=UTF8&useOldAliasMetadataBehavior=true&jdbcCompliantTruncation=false
+history.jdbc.username=root
+history.jdbc.password=123456
+
+#Oracle
+#jdbc.default.driverClassName=oracle.jdbc.driver.OracleDriver
+#jdbc.default.url=jdbc:oracle:thin:migle/longforfreedom@10.180.85.205:1521:orcl
+#jdbc.default.username=migle
+#jdbc.default.password=longforfreedom
+#jdbc.hibernate.dialect=org.hibernate.dialect.OracleDialect
+
+#######------proxool---------------------############################
+#\u6700\u5c11\u4fdd\u6301\u7684\u7a7a\u95f2\u8fde\u63a5\u6570(\u9ed8\u8ba42\u4e2a)
+history.proxool.prototypeCount=10
+history.proxool.minimumConnectionCount=10
+history.proxool.maximumConnectionCount=200
+proxool.prototypeCount=40
+#\u6700\u5927\u8fde\u63a5\u6570(\u9ed8\u8ba45\u4e2a)
+proxool.maximumConnectionCount=600
+#\u6700\u5c0f\u8fde\u63a5\u6570(\u9ed8\u8ba42\u4e2a)
+proxool.minimumConnectionCount=40
+#proxool\u81ea\u52a8\u4fa6\u5bdf\u5404\u4e2a\u8fde\u63a5\u72b6\u6001\u7684\u65f6\u95f4\u95f4\u9694(\u6beb\u79d2),\u4fa6\u5bdf\u5230\u7a7a\u95f2\u7684\u8fde\u63a5\u5c31\u9a6c\u4e0a\u56de\u6536,\u8d85\u65f6\u7684\u9500\u6bc1(\u9ed8\u8ba430\u79d2)
+proxool.houseKeepingSleepTime=30000
+#\u5982\u679chousekeeper\u68c0\u6d4b\u5230\u67d0\u4e2a\u7ebf\u7a0b\u7684\u6d3b\u52a8\u65f6\u95f4(\u6beb\u79d2)\u5927\u4e8e\u8fd9\u4e2a\u6570\u503c.\u5b83\u5c06\u4f1a\u6740\u6389\u8fd9\u4e2a\u7ebf\u7a0b(\u9ed8\u8ba45\u5206\u949f)
+proxool.maximumActiveTime=1800000
+#\u53ef\u4e00\u6b21\u5efa\u7acb\u7684\u6700\u5927\u8fde\u63a5\u6570(\u9ed8\u8ba410)
+proxool.simultaneousBuildThrottle=20

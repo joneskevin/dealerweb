@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * page css
+ * author: tvrrdfn 
+ * email: tvrrdfn@126.com
+
+ * more: http://www.weizemiao.com
+ * -------------------------------------------------
+*/
+
+
+
+
+/* =0 public
+ -------------------------------------------------*/
+body {
+    width: auto;
+    min-width: 1016px;
+    min-height: 620px;
+    background: url(../images/vwlogo.png) no-repeat center bottom #e9e9e9;
+    min-height: 200px;
+    _width:expression(document.body.clientWidth < 1016 ? "1016px" : document.body.clientWidth);
+    _height:expression(this.scrollHeight < 620 ? "620px" : this.scrollHeight);
+    }
+
+/* clearfix */
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+    }
+.clearfix:after{
+    clear:both;
+    overflow:hidden;
+    }
+.clearfix{
+    zoom:1;
+    }
+
+/* textOver */
+.text_over {
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    }
+
+
+
+
+
+/* =10 Login
+ -------------------------------------------------*/
+#login {
+    width: 508px;
+    height: 572px;
+    padding-left: 508px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -508px;
+    background: url(../images/login_line.png) no-repeat center 110px;
+    font-family:"微软雅黑";
+    }
+    
+    /* logo */
+    #login h1 {
+        width: 98px;
+        height: 92px;
+        background: url(../images/login_logo.png) no-repeat;
+        position: absolute;
+        top: 170px;
+        left: 310px;
+        }
+
+    /* title */
+    #login strong {
+        width: 205px;
+        height: 18fpx;
+        margin: 137px 0 32px 70px;
+        background: url(../images/login_title.png) no-repeat left top;
+        }
+
+    /* input */
+    #login p {
+        margin-bottom: 15px;
+        padding-left: 30px;
+        }
+    #login em {
+        width: 80px;
+        line-height: 25px;
+        font-size:12px;
+		color:#666;
+        float: left;
+        display: block;
+        text-align: right;
+        margin-right: 18px;
+        }
+    #login input,
+    #login p a {
+        width: 155px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        font-family:"微软雅黑";
+		color:#008ed0;
+		padding-left:5px;
+        float: left;
+        background: #b3b3b3;
+        background: rgba(0,0,0, .1);
+        background: transparent\9;
+        zoom:1\8;
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000)";
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
+        }
+    #login span {
+        clear: both;
+        color: #f00;
+        display: block;
+        line-height: 16px;
+        text-indent: 98px;
+        white-space: nowrap;
+        padding-top: 4px;
+        display: none;
+        }
+    #login input#verify {
+        width: 154px;
+        margin-right: 10px;
+        }
+    #login input#btn_login {background: #008ed0;}
+    #login p img {float: left;}
+    #login input#btn_login,
+    #login p a {
+        width: 62px;
+        height: 25px;
+        padding: 0;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        margin-left: 98px;
+        line-height: 25px;
+        }
+    #login p a {
+        width: 187px;
+        margin: 0;
+        float: right;
+        color: #008ed0;
+        display: block;
+        text-decoration: none;
+        }

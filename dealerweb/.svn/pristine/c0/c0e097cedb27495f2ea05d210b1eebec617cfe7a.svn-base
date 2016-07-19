@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tree id="0">
+
+	<item text="系统管理" id="MangerSystem" open="1" im0="books_close.gif" im1="tombs.gif" im2="tombs.gif" call="1" select="1">
+		<item text="管理员管理" id="system1" im0="book.gif" im1="books_open.gif" im2="books_close.gif">
+			<item text="管理员列表" id="101" im0="book.gif" im1="books_open.gif" im2="book.gif"/>
+			<item text="新增管理员" id="102" im0="book.gif" im1="books_open.gif" im2="book.gif"/>
+			<item text="权限分配" id="103" im0="book.gif" im1="books_open.gif" im2="book.gif"/>
+		</item>
+	</item>
+	
+	<item text="财务管理" id="MangerStore" open="1" im0="books_close.gif" im1="tombs.gif" im2="tombs.gif" call="1" select="1">
+		<item text="帐务记录" id="store1" im0="book.gif" im1="books_open.gif" im2="books_close.gif">
+			<item text="客户列表" id="301" im0="book.gif" im1="books_open.gif" im2="book.gif"/>
+			<item text="充值记录" id="302" im0="book.gif" im1="books_open.gif" im2="book.gif"/>
+			<item text="消费记录" id="303" im0="book.gif" im1="books_open.gif" im2="book.gif"/>
+		</item>
+		<item text="客户充值" id="store2" im0="book.gif" im1="books_open.gif" im2="books_close.gif">
+			<item text="客户充值" id="311" im0="book.gif" im1="books_open.gif" im2="book.gif"/>
+		</item>
+	</item>
+
+</tree> 

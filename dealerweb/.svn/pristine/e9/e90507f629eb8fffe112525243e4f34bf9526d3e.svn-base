@@ -1,0 +1,30 @@
+/* CSS Document */
+*{ border:0; margin:0; padding:0; text-decoration:none; list-style:none;}
+img{ vertical-align:bottom}
+body{ color:#666}
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+    }
+.clearfix:after{
+    clear:both;
+    overflow:hidden;
+    }
+.clearfix{
+    zoom:1;
+    }
+	
+.popup{font-family:"黑体"; font-size:12px;  }
+.popup span{ color:#666;}
+.popup .title{ font-size:16px; text-align:center;  line-height:40px; color:#008dd4; height:40px; border-bottom:1px solid #ededed;}
+.popup .title a{ float:right;}
+.popup .main{ padding:0 25px 0 20px;}
+.popup .main .t{ font-size:14px; height:50px; line-height:50px; color:#008dd4;}
+.popup .main .t2{ font-size:14px; height:30px; line-height:30px; color:#008dd4;}
+.popup tr{ height:25px;}
+.popup .main input{ height:20px; background:#d5d5d5; width:118px;}
+.popup .main select{ height:20px; background:#d5d5d5; width:118px; border:0;}
+.popup .submitbar{ text-align:center; margin-top:25px;}
+.popup .btn_submit{background: #008dd4; width: 128px; height: 32px; color: #fff; font-size: 14px;}
+.line{ border-bottom:1px solid #ededed;}
+

@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+margin:0pt;padding:0pt; font-family:宋体;}
+body {
+	font-family: "宋体", "Times New Roman", Times, serif;
+	font-size: 12px;
+	line-height: 150%;
+	color: #666666;
+	background-image: url(../images/homeTopbg.gif);
+	background-repeat: repeat-x;
+}
+a {
+	font-family: 宋体;
+	font-size:12px;
+	color:#666666;
+	line-height: 100%;
+	text-decoration: underline;
+}
+a:link, a:active, a:visited {
+}
+a:hover {
+	text-decoration:underline;
+}
+#homeMain {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+#homeMain #homeTopnav {
+	height: 23px;
+	width: 983px;
+	color: #FFFFFF;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 100%;
+	padding-top: 5px;
+	text-align: right;
+	padding-right: 10px;
+	position: relative;
+	padding-left: 10px;
+}
+
+#homeMain #homeTopnav a {
+	font-family: 宋体;
+	font-size:12px;
+	color:#ffffff;
+	line-height: 100%;
+}
+#homeMain #homeTopnav a:link, #homeMain #homeTopnav a:active, #homeMain #homeTopnav a:visited {
+	text-decoration:none;
+}
+#homeMain #homeTopnav a:hover {
+	text-decoration:underline;
+}
+#nav1 {
+	width: 300px;
+	float: left;
+	color: #FFFFFF;
+	line-height: 20px;
+	text-align: left;
+}
+#nav2 {
+	line-height: 20px;
+	color: #FFFFFF;
+	float: right;
+	width: 500px;
+	text-align: right;
+}
+#homeMain #homeTop {
+	height: 115px;
+	width: 1003px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#homeMain #homeTop #homeLogo {
+	float: left;
+	height: 95px;
+	width: 200px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+#homeMain #homeFlash {
+	height: 420px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#homeFooter {
+	float: left;
+	width: 100%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #c3cad2;
+	text-align: center;
+	padding-bottom: 10px;
+}
+#homeFooter p {
+	padding-top: 5px;
+	line-height: 22px;
+}
+#homeFooter img {
+	padding-right: 6px;
+	padding-left: 6px;
+	border:none;
+	overflow: hidden;	
+}

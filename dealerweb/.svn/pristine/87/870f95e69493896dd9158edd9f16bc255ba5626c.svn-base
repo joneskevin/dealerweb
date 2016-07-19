@@ -1,0 +1,52 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #c6ebde; FONT-SIZE: 9pt; BACKGROUND: #ffffff; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #39867b; SCROLLBAR-3DLIGHT-COLOR: #39867b; LINE-HEIGHT: 150%; SCROLLBAR-ARROW-COLOR: #330000; SCROLLBAR-TRACK-COLOR: #e2f3f1; FONT-FAMILY: "??"; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 9pt; FONT-FAMILY: "����"; HEIGHT: 25px
+}
+INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9pt; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT-FAMILY: "??"; HEIGHT: 22px
+}
+BUTTON {
+	FONT-SIZE: 9pt; BACKGROUND: url(images/topBar_bg.gif)
+}
+SELECT {
+	FONT-SIZE: 9pt
+}
+A {
+	FONT-WEIGHT: bold; COLOR: #295381;
+}
+A:hover {
+	COLOR: #3399cc; TEXT-DECORATION: underline
+}
+a.current{ color:#3399cc; text-decoration:underline;}
+.title {
+	BACKGROUND: url(images/topBar_bg.gif)
+}
+.border {
+	BORDER-RIGHT: #39867b 1px solid; BORDER-TOP: #39867b 1px solid; BORDER-LEFT: #39867b 1px solid; BORDER-BOTTOM: #39867b 1px solid
+}
+.tdbg {
+	BACKGROUND: #e7f5f0; LINE-HEIGHT: 120%
+}
+.topbg {
+	BACKGROUND: url(images/topbg.gif); COLOR: #ffffff
+}
+.bgcolor {
+	background: url(images/topBar_bg.gif);
+	background-repeat:repeat-x;
+}
+.tablebg {
+	BACKGROUND-COLOR: #a8dfcd
+}
+.input100 {
+	WIDTH: 100%
+}
+.style4 {
+	COLOR: #ffffff
+}
+.40td {
+	VERTICAL-ALIGN: text-bottom; HEIGHT: 38px
+}
+
+th{ font-size:10px;}

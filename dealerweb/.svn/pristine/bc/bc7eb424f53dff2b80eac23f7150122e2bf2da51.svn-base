@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#homeMain{ margin:0; padding:0; width:100%; background:#f3f8fb url(../images/login_bg.gif) repeat-x 0 0;}
+
+.content{ width:882px; height:485px; background:url(../images/login_main.jpg) no-repeat; margin:76px auto 60px auto;}
+
+/* 注册 */
+.registerForm {
+	width: 550px;
+	margin:0 auto;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	
+}
+.registerForm h2{
+	font-size:14px;
+	font-weight:normal;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 110;
+	width: 500px;
+}
+.registerForm em{ font-weight:normal; color:#FF0000;}
+.registerForm  p  {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 20px;
+	width:100%;
+	overflow:hidden;
+}
+.registerForm  p.text{ margin-top:30px; padding-left:25px;}
+.registerForm  label  {
+	width: 110px;
+	float: left;
+	text-align: right;
+	padding-right: 5px;
+	line-height: 22px;
+	height: 22px;
+}
+.registerForm  .register  {
+	width: 220px;
+	float:left;
+	margin-right:5px;
+	line-height: 18px;
+	height: 18px;
+}
+.registerForm .s {
+	width: 150px;
+	line-height: 18px;
+	height: 18px;
+}
+.registerForm .st {
+	float: left;
+	line-height: 18px;
+}
+
+
+.registerForm .safetyLevel {
+	width: 137px;
+	float: left;
+	height: 20px;
+	overflow: hidden;
+}
+.registerForm .registerButton {
+	border-width: 0px;
+	cursor: pointer;
+    color:#fff;
+	top: 2px;
+	background-repeat: no-repeat;
+	background-image:url(../images/btnBg04.gif);
+	width:65px;
+	height:21px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 115px;
+	padding: 0px;
+	 line-height:25px;
+}
+
+/* 登录 */
+.info{ width:300px; height:280px; margin:35px 0 0 142px; *margin:35px 0 0 71px; float:left; background:url(../images/line.png) no-repeat right top;}
+.info .logo{ margin-top:52px;}
+.info .text{ margin-top:20px; margin-left:4px;}
+.info .text{ color:#1d4467; line-height:160%;}
+
+.login{ width:330px; height:280px; margin-top:87px; padding-left:35px; color:#1d4467; float:left}
+.login  label{ font-weight:bold; }
+.login .size{ border:1px solid #a1a8b0; width:200px; height:20px; line-height:20px;}
+.login p{ margin:8px 0 8px 52px; line-height:160%;}
+.login a{ color:#f92b2b; text-decoration:underline;}
+.login .btnOne{ background:url(../images/btnBg04.gif) no-repeat; margin-top:8px; margin-right:30px; border:none; color:#fff; width:65px; height:21px; line-height:25px;}
