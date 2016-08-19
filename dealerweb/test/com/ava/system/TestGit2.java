@@ -29,7 +29,7 @@ public class TestGit2 extends TestBase {
 	@Ignore
 	public void testQuery() {
 		Date startTime=new Date();
-		System.out.println("开始时间：" + DateTime.toNormalDotDateTime(startTime));
+		System.out.println("开始Time：" + DateTime.toNormalDotDateTime(startTime));
 		service.listVehicle(new TransMsg(), new VehicleVO(), 1, 1, false);
 		Date endTime = new java.util.Date();
 		System.out.println("结束时间：" + DateTime.toNormalDotDateTime(endTime)) ;
