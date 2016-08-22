@@ -61,6 +61,18 @@ public class TestGit2 extends TestBase {
 		//输出结束时间
 		System.out.println("end time：" + DateTime.toNormalDotDateTime(endTime)) ;
 	}
+	
+	@Test
+	@Ignore
+	public void testDelete() {
+		Date startTime=new Date();
+		//输出开始时间
+		System.out.println("startTime：" + DateTime.toNormalDotDateTime(startTime));
+		service.listVehicle(new TransMsg(), new VehicleVO(), 1, 1, false);
+		Date endTime = new java.util.Date();
+		//输出结束时间
+		System.out.println("end time：" + DateTime.toNormalDotDateTime(endTime)) ;
+	}
 
 	
 
