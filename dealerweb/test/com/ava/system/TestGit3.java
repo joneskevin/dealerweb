@@ -18,7 +18,11 @@ import com.ava.domain.vo.VehicleVO;
 import com.ava.gateway.domain.vo.HeaderMessage;
 import com.ava.gateway.facade.IProtocolParseBusinessFacade;
 import com.ava.util.DateTime;
-
+/**
+ * 我是bug分支添加的注释
+ * @author kevin
+ *
+ */
 public class TestGit3 extends TestBase {
 	@Autowired
 	public IVehicleService service;
